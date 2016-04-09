@@ -23,7 +23,8 @@ public class TestMergeSort {
 	
 	@Test
 	public void sortSingleElement() throws Exception {
-		assertThat(MergeSort.sort(input,0,0),equalTo(input));
-		assertThat(MergeSort.sort(input,1,1),equalTo(input));
+		
+		assertThat(MergeSort.sort(input,0,0),equalTo(asList(8,3,2,6,9,7,1,5,4)));
+		assertThat(MergeSort.sort(input,1,1),equalTo(asList(8,3,2,6,9,7,1,5,4)));
 	}
 }
