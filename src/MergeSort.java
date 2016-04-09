@@ -8,7 +8,13 @@ public class MergeSort {
 	}
 
 	public static List<Integer> sort(List<Integer> input, int i, int j) {
-		// TODO Auto-generated method stub
+		
+		int buff;
+		if(input.get(i).intValue()>input.get(j).intValue()){
+			buff=input.get(i);
+			input.set(i, input.get(j));
+			input.set(j, buff);
+		}
 		return input;
 	}
 

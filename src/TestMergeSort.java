@@ -27,4 +27,10 @@ public class TestMergeSort {
 		assertThat(MergeSort.sort(input,0,0),equalTo(asList(8,3,2,6,9,7,1,5,4)));
 		assertThat(MergeSort.sort(input,1,1),equalTo(asList(8,3,2,6,9,7,1,5,4)));
 	}
+	
+	@Test
+	public void sortTwoSizeArrays() throws Exception {
+		
+		assertThat(MergeSort.sort(input,0,1),equalTo(asList(3,8,2,6,9,7,1,5,4)));
+	}
 }
